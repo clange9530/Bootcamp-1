@@ -25,8 +25,8 @@ var requestHandler = function(request, response) {
 fs.readFile('listings.json', 'utf8', function(err, data) {
   //Turns data from listings.json into a readable stream.
   listingData = fs.createReadStream(__dirname + '/listings.json', 'utf-8');
-  server = http.createServer(requestHandler);
-  server.listen(port, function(){
-    console.log('Server listening on: http://127.0.0.1:' + port);
+  //Launches server.
+  http.createServer(requestHandler).listen(port, function(){
+    console.log("Server listening on localhost:" + port);
   }); 
 });
