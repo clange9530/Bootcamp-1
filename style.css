@@ -7,6 +7,10 @@
   overflow: auto;
 }
 
+/*
+Added style for removeButton and the hover effect. Changed
+
+*/
 #removeButton{
   font-size: 14px;
   background-color: background-color: #e7e7e7; color: black;
@@ -16,6 +20,10 @@
 }
 
 #removeButton:hover{
-  background-color: black;
-  color: white;
+  background-color: #0021A5;
+  color: #FA4616;
+}
+
+.jumbotron{
+
 }
