@@ -6,3 +6,16 @@
   max-height: 400px;
   overflow: auto;
 }
+
+#removeButton{
+  font-size: 14px;
+  background-color: background-color: #e7e7e7; color: black;
+  border-radius: 8px;
+  -webkit-transition-duration: .4s;
+  transition-duration: .4s;
+}
+
+#removeButton:hover{
+  background-color: black;
+  color: white;
+}
