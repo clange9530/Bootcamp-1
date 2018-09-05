@@ -31,11 +31,17 @@
               </tbody>
             </table>
           </div>
-          <!--
-
-              Write an HTML form that adds new listings to the directory
-
-            -->
+          <div>
+            <h3>Input data for new listing</h3>
+            <form name="newlisting" novalidate>
+              <div>
+                <input type="text" placeholder="Code" ng-model="newlisting.code">
+                <input type="text" placeholder="Building Name" ng-model="newlisting.name">
+                <input type="text" placeholder="Building Address" ng-model="newlisting.address">
+                <button id="add-listing" ng-click="addListing()">Add Listing</button>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="col-md-6">
           <div class="jumbotron">
