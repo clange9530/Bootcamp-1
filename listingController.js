@@ -4,8 +4,13 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
     $scope.detailedInfo = undefined;
     $scope.newlisting;
     /*
-      Implement these functions in the controller to make your application function
-      as described in the assignment spec.
+      
+      
+      deleteListing takes the index of the selected listing and "splices" together the array at 
+      the next index, skipping the selected object. 
+      
+      showDetails simply puts the selected object from the array into a variable that is easier
+      and cleaner to access.
      */
     $scope.addListing = function() {
       var newListing = {
