@@ -29,6 +29,7 @@ mongoose.connect(config.db.uri, function(err, res){
 var listingdata = require('./listings.json');
 
 Listing.collection.insertMany(listingdata.entries);
+
 /* 
   Once you've written + run the script, check out your MongoLab database to ensure that 
   it saved everything correctly. 
