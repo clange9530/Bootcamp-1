@@ -5,6 +5,9 @@ var findLibraryWest = function() {
     Find the document that contains data corresponding to Library West,
     then log it to the console. 
    */
+  var query = Something.find({'code': 'LBW' });
+  query.select('code');
+  console.log(query);
 };
 var removeCable = function() {
   /*
